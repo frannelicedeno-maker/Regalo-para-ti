@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Para Mi Amor ❤️</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <audio id="musicaAmor" loop>
+        <source src="tu-cancion.mp3" type="audio/mpeg">
+    </audio>
+
+    <div id="view-card" class="container">
+        <div class="card">
+            <div class="profile-wrap">
+                <img src="tu-foto.jpg" alt="Nosotros" class="profile-img">
+            </div>
+            <h1>¡Feliz San Valentín, mi amor! ❤️</h1>
+            <p class="subtitle">Eres mi persona favorita en todo el universo</p>
+            <div class="actions">
+                <button class="btn" onclick="mostrarRazones()">Razones por las que te amo... ✍️</button>
+                <button class="btn" onclick="mostrarRecuerdos()">Nuestros recuerdos 📸</button>
+                <button id="btn-galaxy" class="btn btn-special">🌌 ENTRAR A MI UNIVERSO 🌌</button>
+                <button class="btn" onclick="window.location.href='https://wa.me/?text=Te%20amo%20mucho%20mi%20amor!%20💋'">¡Enviame un beso! 💋</button>
+            </div>
+            <p class="footer">CON AMOR, DANIELA</p>
+        </div>
+    </div>
+
+    <div id="view-galaxy" class="container hidden">
+        <div id="galaxy-container"></div>
+        <button id="btn-back" class="btn-back" onclick="location.reload()">⬅ Regresar a tierra</button>
+        <div id="love-phrases-overlay"></div>
+    </div>
+
+    <div id="modal-razones" class="modal hidden">
+        <div class="modal-content">
+            <h2 style="color: #ff4d6d;">Razones por las que te amo ❤️</h2>
+            <div class="text-razones">
+                <p>💖 Por ser el refugio donde siempre quiero llegar.</p>
+                <p>💖 Por la paz que me das incluso en mis días más locos.</p>
+                <p>💖 Porque eres mi mejor amigo y mi apoyo.</p>
+                <p>💖 Por tu paciencia y por cómo me motivas a ser mejor.</p>
+                <p>💖 Porque a tu lado me siento en casa, sin importar dónde estemos.</p>
+            </div>
+            <button class="btn" onclick="cerrarModales()">Cerrar</button>
+        </div>
+    </div>
+
+    <div id="modal-recuerdos" class="modal hidden">
+        <div class="modal-content galeria-container">
+            <h2 style="color: #ff4d6d;">Nuestra Historia ❤️</h2>
+            <div class="galeria-scroll">
+                <img src="FOTO_1.jpg" class="img-recuerdo" alt="nosotross.jpg">
+                <img src="FOTO_2.jpg" class="img-recuerdo" alt="Recuerdo">
+                <video controls class="img-recuerdo">
+                    <source src="VIDEO_1.mp4" type="video/mp4">
+                </video>
+                <p style="font-size: 0.8rem; opacity: 0.7;">Y muchos momentos más por vivir...</p>
+            </div>
+            <button class="btn" onclick="cerrarModales()">Cerrar</button>
+        </div>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/0.158.0/three.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>

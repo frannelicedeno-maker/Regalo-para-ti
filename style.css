@@ -1,0 +1,31 @@
+body, html { margin: 0; padding: 0; width: 100%; height: 100%; background: #000; font-family: 'Segoe UI', Arial, sans-serif; overflow: hidden; color: white; }
+.container { width: 100%; height: 100%; display: flex; justify-content: center; align-items: center; }
+.hidden { display: none !important; }
+
+/* Tarjeta Inicial */
+#view-card { background: radial-gradient(circle, #2a0005 0%, #000 100%); }
+.card { text-align: center; width: 85%; max-width: 380px; padding: 25px; border-radius: 30px; background: rgba(0,0,0,0.6); border: 1px solid #ff4d6d; box-shadow: 0 0 20px rgba(255, 77, 109, 0.3); }
+.profile-wrap { width: 150px; height: 150px; margin: 0 auto 1rem; border-radius: 50%; border: 3px solid #ff4d6d; box-shadow: 0 0 30px #ff4d6d; overflow: hidden; }
+.profile-img { width: 100%; height: 100%; object-fit: cover; }
+h1 { color: #ff4d6d; font-size: 1.5rem; text-shadow: 0 0 10px rgba(255, 77, 109, 0.5); margin: 10px 0; }
+.subtitle { font-size: 0.85rem; opacity: 0.8; margin-bottom: 20px; }
+
+.btn { width: 100%; padding: 12px; margin: 8px 0; border-radius: 25px; border: 1px solid #ff4d6d; background: rgba(255, 77, 109, 0.1); color: white; cursor: pointer; font-size: 0.95rem; transition: 0.3s; }
+.btn-special { background: linear-gradient(90deg, #ff0055, #7a00ff); border: none; font-weight: bold; box-shadow: 0 0 20px #7a00ff; }
+
+/* Galaxia */
+#galaxy-container { position: absolute; top: 0; left: 0; width: 100%; height: 100%; }
+.btn-back { position: absolute; top: 20px; left: 20px; z-index: 100; background: rgba(255,255,255,0.1); border: 1px solid white; color: white; padding: 8px 15px; border-radius: 20px; cursor: pointer; }
+.love-phrase { position: absolute; color: white; font-weight: bold; text-shadow: 0 0 10px #ff0080; opacity: 0; animation: fadeInOut 8s infinite linear; pointer-events: none; white-space: nowrap; }
+@keyframes fadeInOut { 0%, 100% { opacity: 0; transform: scale(0.6); } 20%, 80% { opacity: 1; transform: scale(1.1); } }
+
+/* Modales / Ventanas Flotantes */
+.modal { position: fixed; top: 0; left: 0; width: 100%; height: 100%; background: rgba(0,0,0,0.95); display: flex; justify-content: center; align-items: center; z-index: 2000; }
+.modal-content { background: #1a0005; border: 2px solid #ff4d6d; padding: 25px; border-radius: 25px; text-align: center; max-width: 80%; box-shadow: 0 0 30px #ff4d6d; }
+.text-razones p { margin: 12px 0; font-size: 1rem; color: #ffe6eb; text-align: left; }
+
+/* Galería de Recuerdos */
+.galeria-container { width: 90%; max-height: 85vh; overflow: hidden; display: flex; flex-direction: column; }
+.galeria-scroll { overflow-y: auto; padding: 15px; display: flex; flex-direction: column; gap: 15px; }
+.img-recuerdo { width: 100%; border-radius: 15px; border: 1px solid #ff4d6d; }
+.footer { font-size: 0.7rem; letter-spacing: 2px; margin-top: 15px; opacity: 0.6; }
